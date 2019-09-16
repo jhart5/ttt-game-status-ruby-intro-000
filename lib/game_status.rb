@@ -22,9 +22,7 @@ def won?(board)
     elsif   win_comb = combination.all? {|index| board[index] == "O"}
       return combination
     else
-      return nil
-
-
+      return nil  
     end
   end
 end
