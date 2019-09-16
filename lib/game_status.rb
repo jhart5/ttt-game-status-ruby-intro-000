@@ -28,12 +28,3 @@ end
 
 
 
-
-
-
-
-      print combination
-
-  end
-  return Status
-end
