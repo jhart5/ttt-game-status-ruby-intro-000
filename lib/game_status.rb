@@ -30,4 +30,11 @@ end
 
 def full?(board)
   board.all? do |location|
-    if location == ("X" || "O")
+    if ((location == "X" || location == "O")
+      return true
+    else
+      false
+    end
+  end
+end
+
