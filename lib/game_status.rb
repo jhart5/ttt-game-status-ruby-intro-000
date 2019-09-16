@@ -19,7 +19,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |combination|
     if combination.all? {|index| board[index] == "X"}
       return combination
-    elsif   win_comb = combination.all? {|index| board[index] == "O"}
+    elsif   combination.all? {|index| board[index] == "O"}
       return combination
     else
       return nil
