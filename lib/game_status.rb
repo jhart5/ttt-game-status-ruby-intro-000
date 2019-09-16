@@ -37,3 +37,6 @@ def full?(board)
     end
   end
 end
+
+def draw?
+  full?(board) && !won(board)
