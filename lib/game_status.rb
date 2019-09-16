@@ -48,7 +48,7 @@ end
 
 def winner(board)
   if won?(board)
-    return board[index]
+    return board[combination[0]]
   else
     nil
   end
