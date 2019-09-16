@@ -17,7 +17,13 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
-    win_comb = combination.all? {|index| ((index == "X")||(index == "O")) }
+    win_comb = combination.all? {|index| ((board[index] == "X")||(board[index] == "O")) }
+    if win_comb == true
+      return combination
+    else
+      return nil
+    end
+  end
 end
 
 
