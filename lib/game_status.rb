@@ -51,3 +51,5 @@ def winner(board)
     return board[index]
   else
     nil
+  end
+end
